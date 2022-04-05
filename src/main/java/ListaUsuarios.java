@@ -32,8 +32,8 @@ public class ListaUsuarios {
             if (usuarioCandidato.passCorrecta(passCandidata)) {
                 return true;
             }
-        } while (usuarioCandidato.quedanIntentos());
-        return false;
+            } while (usuarioCandidato.quedanIntentos());
+             return false;
 
     }
 

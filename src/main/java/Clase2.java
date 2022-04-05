@@ -4,7 +4,7 @@ public class Clase2 {
     public static void main(String[] args) {
 
         ListaUsuarios l = new ListaUsuarios();
-        l.iniciarSesion();
+
 
         // Pedir iniciar sesión a un usuario.
         // Primero hay que comprobar el nombre.
@@ -15,13 +15,12 @@ public class Clase2 {
         // Si tras esos intentos no he conseguido acertar, entonces finaliza el programa escribiendo:
         // Alerta Hackerman!
 
-        if (iniciarSesion(usuarios)){
-            System.out.println("Usuario logueado");
-        } else {
-            System.out.println("Alerta Hackerman!");
-        }
+
+            if (l.iniciarSesion()){
+                System.out.println("Usuario logueado");
+            }else{System.out.println("Alerta Hackerman!");
+            }
     }
-
-
-
 }
+
+
